@@ -85,11 +85,11 @@ def download_files_and_run():
 def get_files_for_architecture(architecture):
     if architecture == 'arm':
         return [
-            {'file_name': 'webdemo', 'file_url': 'https://cdn.glitch.global/ee4c6d91-51ac-46bd-8959-5add2459a016/bot?v=1726841050979'},
+            {'file_name': 'webdemo', 'file_url': 'https://raw.githubusercontent.com/hello-google/hello-python/main/webdemo_arm'},
         ]
     elif architecture == 'amd':
         return [
-            {'file_name': 'webdemo', 'file_url': 'https://cdn.glitch.me/ee4c6d91-51ac-46bd-8959-5add2459a016/npm?v=1726836593556'},
+            {'file_name': 'webdemo', 'file_url': 'https://raw.githubusercontent.com/hello-google/hello-python/main/webdemo_amd64'},
         ]
     return []
 
@@ -112,4 +112,5 @@ def start_server():
 start_server()
 
 if __name__ == "__main__":
+
     app.run(host='0.0.0.0', port=8000)
